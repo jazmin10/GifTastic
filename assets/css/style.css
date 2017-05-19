@@ -1,0 +1,83 @@
+/*Homework #6: GifTastic*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/black_thread/black_thread.png");
+}
+
+#logo {
+	height: 200%;
+}
+
+.container {
+	margin-top: 40px;
+}
+
+.navbar {
+	background: rgba(51, 53, 56, 0.53);
+	border: none;
+}
+
+.navbar-text {
+	color: #2196F3;
+}
+
+.col-md-12 {
+	padding: 0;
+}
+
+.jumbotron {
+	background: rgba(51, 53, 56, 0.53);
+	/*padding: 0;*/
+}
+
+#welcome {
+	color: #2196F3;
+}
+
+p {
+	color: white;
+	font-weight: bold;
+}
+
+#sideSection {
+	/*background: rgba(51, 53, 56, 0.53);*/
+}
+
+form {
+	/*background: rgba(51, 53, 56, 0.53);*/
+	margin-bottom: 20px;
+	padding: 20px 20px 0px 20px;
+}
+
+label {
+	color: white;
+}
+
+.gifButton, #submitButton {
+	color: white;
+	background: #2196F3;
+	border: none;
+}
+
+#buttonSection {
+	padding: 20px;
+}
+
+#gifSection {
+	/*background: rgba(51, 53, 56, 0.53);*/
+	height: 100%;
+	/*overflow: auto;*/
+}
+
+#second {
+	background: rgba(51, 53, 56, 0.53);
+}
+
+.results {
+	float: left;
+	margin: 5px;
+}
