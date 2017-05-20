@@ -1,4 +1,6 @@
 // Homework #6: GifTastic
+// Alternate solution: the only variation is the animation function 
+// and how we call it 
 
 // GLOBAL VARIABLES
 var topics = ["bb-8", "yoda", "han solo", "chewbacca", "princess leia", "r2-d2", "kylo ren", "darth vader"];
@@ -87,12 +89,12 @@ function newButton(event){
 	renderButtons();
 }
 
-// Animate gifs
-function animation(gifState){
-	var stillAnimate = gifState;
+// Animates gifs
+function animation(){
+	var state = $(this).attr("data-state");
 
-	if(stillAnimate === "still"){
-		console.log(this);
+	// If the animation is still, then animate AND vice-versa
+	if(state === "still"){
 		var gifAnimate = $(this).attr("data-animate");
 		$(this).attr("src", gifAnimate);
 		$(this).attr("data-state", "animate");
@@ -106,20 +108,16 @@ function animation(gifState){
 
 // MAIN PROCESSES
 
-// Clicking on a gif button...
+// Cliking on a gif button...
 $(document).on("click", ".gifButton", function(){
 	var value = $(this).attr("data-name");
 	displayGifs(value);
 });
 
 // Clicking on a gif...
-$(document).on("click", ".gif", function(){
-	var gifState = $(this).attr("data-state");
-	console.log(this);
-	animation.call(this, gifState);
-});
+$(document).on("click", ".gif", animation);
 
-// Clicking on submit button
+// Clicking on submit button...
 $("#submitButton").click(newButton);
 
 // Show initial buttons...
