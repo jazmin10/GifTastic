@@ -34,7 +34,7 @@ function displayGifs(value){
 	var limit = 10;
 	var audienceRating = "g";
 	var name = value;
-	var queryURL = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q="+ name +"&rating=" + audienceRating + "&limit=" + limit;
+	var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q="+ name +"&rating=" + audienceRating + "&limit=" + limit;
 
 	// Make AJAX request
 	$.ajax({
@@ -42,7 +42,7 @@ function displayGifs(value){
 		method: "GET"
 	})
 	.done(function(response){
-		console.log(response);
+		// console.log(response);
 		var dataArr = response.data;
 
 		var j = 0;
@@ -80,7 +80,7 @@ function newButton(event){
 	// Grabs the value entered and adds it to the topics array
 	var newCharacter = $("#newCharacter").val().trim();
 	topics.push(newCharacter.toLowerCase());
-	console.log(topics);
+	// console.log(topics);
 
 	$("#newCharacter").val("");
 
@@ -92,7 +92,7 @@ function animation(gifState){
 	var stillAnimate = gifState;
 
 	if(stillAnimate === "still"){
-		console.log(this);
+		// console.log(this);
 		var gifAnimate = $(this).attr("data-animate");
 		$(this).attr("src", gifAnimate);
 		$(this).attr("data-state", "animate");
@@ -115,7 +115,7 @@ $(document).on("click", ".gifButton", function(){
 // Clicking on a gif...
 $(document).on("click", ".gif", function(){
 	var gifState = $(this).attr("data-state");
-	console.log(this);
+	// console.log(this);
 	animation.call(this, gifState);
 });
 
