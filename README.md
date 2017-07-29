@@ -21,13 +21,13 @@ These were guidelines I had to follow in order to complete the app.
 
 ![landingPage](assets/images/landingPage.png)
 
-#### Selecting a characters
+#### Selecting a character
 
 ![selectPage](assets/images/selectPage.png)
 
 #### Adding a new button to the list
 
-For this example, I added Kylo Ren to the list. 
+For this example, I added C3PO to the list. 
 
 ![newButtonPage](assets/images/newButtonPage.png)
 
