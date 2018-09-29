@@ -1,4 +1,4 @@
-// Homework #6: GifTastic
+// GifTastic
 // Alternate solution: the only variation is the animation function 
 // and how we call it 
 

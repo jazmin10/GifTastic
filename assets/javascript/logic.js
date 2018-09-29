@@ -1,4 +1,4 @@
-// Homework #6: GifTastic
+// GifTastic
 
 // GLOBAL VARIABLES
 var topics = ["bb-8", "yoda", "han solo", "chewbacca", "princess leia", "r2-d2", "kylo ren", "darth vader"];
